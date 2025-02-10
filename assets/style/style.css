@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "Optimus Princeps";
+    src: url("assets/fonts/OptimusPrinceps.ttf") format("truetype");
+}
+
+.logo-text {
+    font-family: "Optimus Princeps", serif;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #b68d40;
+    letter-spacing: 2px;
+}
+
+/* Navbar */
+.navbar {
+    padding: 10px 0;
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 15px;
+    color: #333;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #b68d40;
+}
+
+/* Main */
+.hero {
+    background-image: url("../img/salle.jpg");
+    background-size: cover; /* L'image couvre toute la largeur et hauteur */
+    background-position: center; /* Centrer l'image */
+    height: 100vh; /* Prendre toute la hauteur de la fenêtre */
+    color: white; /* Texte en blanc pour contraster */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centrer le texte */
+}
