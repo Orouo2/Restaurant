@@ -33,6 +33,6 @@
 
 @media (max-width: 768px) {
     .image_accueil {
-        height: 50vh; /* Réduire la hauteur de l'image sur mobile */
+        height: 50vh;
     }
 }
