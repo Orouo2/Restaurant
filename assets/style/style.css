@@ -5,22 +5,13 @@
 
 .logo-text {
     font-family: "Optimus Princeps", serif;
-    font-size: 28px;
     text-transform: uppercase;
-    color: #b68d40;
     letter-spacing: 2px;
 }
 
 /* Navbar */
-.navbar {
-    padding: 10px 0;
-}
 
-.navbar-brand img {
-    height: 50px;
-}
-
-.navbar-nav .nav-link {
+.navbar-nav .nav-link{
     font-size: 18px;
     font-weight: 500;
     padding: 10px 15px;
@@ -32,13 +23,16 @@
 }
 
 /* Main */
-.hero {
-    background-image: url("../img/salle.jpg");
-    background-size: cover; /* L'image couvre toute la largeur et hauteur */
-    background-position: center; /* Centrer l'image */
-    height: 100vh; /* Prendre toute la hauteur de la fenêtre */
-    color: white; /* Texte en blanc pour contraster */
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Centrer le texte */
+.image_accueil {
+    background: url('../img/salle.jpg');
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    height : 100vh;
+}
+
+@media (max-width: 768px) {
+    .image_accueil {
+        height: 50vh; /* Réduire la hauteur de l'image sur mobile */
+    }
 }
