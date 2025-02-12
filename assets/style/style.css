@@ -19,10 +19,25 @@
 }
 
 .navbar-nav .nav-link:hover {
-    color: #b68d40;
+    color: #b68d40 !important;
 }
 
 /* Main */
+
+/* Nav link */
+.nav-pills .nav-link {
+    font-weight: bold;
+    color: #000000;
+}
+.nav-pills .nav-link:hover {
+    background-color: #d87439 !important; /* Fond orange au survol */
+    color: white; /* Texte blanc au survol */
+}
+.nav-pills .active {
+    background-color: #d87439 !important;
+    color: white;
+}
+
 .image_accueil {
     background: url('../img/salle.jpg');
     background-position: center;
@@ -35,13 +50,8 @@
 .hero-title {
     font-family: "Optimus Princeps", serif;
     font-size: 2rem;
-
-
-    color: rgb(255, 255, 255);
 }
-.bg-overlay {
-    background: rgb(0, 0, 0); /* Fond noir semi-transparent */
-}
+/* Guillemets texte */
 .guillemet-first {
     width: 20px;
     height: auto;
@@ -58,7 +68,7 @@
     width: 100%;
     overflow: hidden;
 }
-
+/* Slider */
 .slider {
     display: flex;
     width: 100%;
@@ -70,6 +80,23 @@
     width: auto;
     object-fit: cover;
 }
+
+/* Card*/
+.card {
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+.card-img-top {
+    object-fit: cover; /* S'assure que l'image occupe toute la zone de l'élément sans déformer l'image */
+    height: 300px; /* Fixe une hauteur uniforme pour toutes les images */
+    width: auto;
+}
+
+
 
 @keyframes slide {
     0% { transform: translateX(0); }
