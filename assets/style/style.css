@@ -38,6 +38,11 @@
     color: white;
 }
 
+.btn {
+    background-color: #d87439 !important;
+    color: white !important;
+}
+
 .image_accueil {
     background: url('../img/salle.jpg');
     background-position: center;
