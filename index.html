@@ -1,15 +1,18 @@
 <!doctype html>
 <html lang="fr">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Page d'accueil</title>
     <link rel="stylesheet" href="assets/style/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
         <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
             <div class="container">
@@ -36,7 +39,7 @@
     <main>
         <section class="image_accueil d-flex align-items-center justify-content-center text-center">
             <h1 class="h2 hero-title fst-italic text-light">Chaque Plat, un Bijou de Saveurs</h1>
-        </section>        
+        </section>
         <section class="container-fluid d-flex flex-column justify-content-center align-items-center py-4 gap-5">
             <h1 class="h2 mt-5">L'Orfèvre</h1>
             <div class="col-10 col-md-6 mx-5 position-relative ">
@@ -46,7 +49,8 @@
                 <div class="position-absolute bottom-0 end-0">
                     <img src="assets/img/guillemet.png" class="guillemet-second" alt="guillemet">
                 </div>
-                <p class="fs-6 fst-italic text-center">Venez découvrir notre restaurant, niché dans ce magnifique écrin de verdure 
+                <p class="fs-6 fst-italic text-center">Venez découvrir notre restaurant, niché dans ce magnifique écrin
+                    de verdure
                     traversé par la mayenne, qui inspire chaque jour notre cuisine et notre service.
                     Nous y avons grandi et appris de nos aînés l’amour du produit et de la terre.
                     Aujourd’hui, nous honorons cette histoire en y apportant notre regard neuf.</p>
@@ -54,8 +58,8 @@
         </section>
         <section class="d-flex flex-column justify-content-center align-items-center py-5 gap-5">
             <h1 class="h2">Nos spécialités</h1>
-            <div class="slider-wrapper">
-                <div class="slider gap-5">
+            <div class="slider-container">
+                <div class="slider">
                     <img src="assets/img/entree1.webp" alt="Entrées 1">
                     <img src="assets/img/plat1.jpg" alt="Plat 1">
                     <img src="assets/img/dessert1.jpg" alt="Dessert 1">
@@ -74,8 +78,8 @@
                     <img src="assets/img/boisson4.avif" alt="Boisson 4">
                 </div>
             </div>
-        </section>  
-    </main>    
+        </section>
+    </main>
     <footer class="bg-dark text-light py-4">
         <div class="container text-center">
             <div class="row gy-3">
@@ -98,6 +102,26 @@
             <p class="mb-0">&copy; 2024 L'Orfèvre - Tous droits réservés</p>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+    <script>
+        const slider = document.querySelector('.slider');
+        let sliderContent = slider.innerHTML; 
+
+        for (let i = 0; i < 2; i++) {
+            slider.innerHTML += sliderContent;
+        }
+
+        function adjustAnimationSpeed() {
+            const sliderWidth = slider.scrollWidth;
+            const speed = sliderWidth / 100; 
+            slider.style.animationDuration = `${speed}s`;
+        }
+
+        adjustAnimationSpeed();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous">
+    </script>
+</body>
+
 </html>
