@@ -61,13 +61,14 @@
     display: flex;
     gap: 20px;
     width: 100%;
-    animation: scroll-continuous 30s linear infinite;
+    animation: scroll-continuous 60s linear infinite;
 }
 
 .slider img {
-    width: auto;
-    height: 100%;
+    width: 25%;
+    height: auto;
     object-fit: cover;
+    position: center;
 }
 
 /* Nav link */
@@ -112,7 +113,7 @@
     }
 
     100% {
-        transform: translateX(-2000%);
+        transform: translateX(-800%);
     }
 }
 
